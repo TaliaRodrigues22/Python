@@ -29,10 +29,13 @@ lista2.remove(palabra)
 print(lista2)
 
 # 5- Escriba un programa que permita crear dos listas de palabras y que, a continuación, elimine de la primera lista los nombres de la segunda lista.
+eliminados=[]
 for i in lista:
     if i in lista2:
         lista.remove(i)
+        eliminados.append(i)
 print(lista)
+print(eliminados)
 
 # 6- Escriba un programa que permita crear una lista de palabras y que, a continuación, cree una segunda lista igual a la primera, pero al revés (no se trata de escribir la lista al revés, sino de crear una lista distinta).
 listaCopy=lista.copy()
