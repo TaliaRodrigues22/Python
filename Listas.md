@@ -128,5 +128,3 @@ a=[0,2,4,6,8]
 * Tamaño lista len Devuelve el valor del tamaño de la lista:
 a=[0,2,4,6,8]
 len(a)=5
-
-
