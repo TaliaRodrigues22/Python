@@ -26,26 +26,26 @@ else:
 # 3- Escriba un programa que permita crear una lista de palabras y que, a continuación, pida dos palabras y sustituya la primera por la segunda en la lista.
 lista3 = ["Cleo", "Aquiles", "gatitos", "escritorio", "celular", "gatitos"]
 pal1 = input("Ingrese la palabra para sustituir: ")
-pal2 = input("Ingrese la nueva palabra: ")
 
-indice = lista3.index(pal1)
-if indice > 0:
-    lista3[indice] = pal2
+if pal1 in lista3:
+    pal2 = input("Ingrese la nueva palabra: ")
+    indice = lista3.index(pal1)
+    lista3[indice] = pal2   
 else: 
     print("La palabra", pal1, "no se encuentra en la lista")
-print(lista3)
 
+print(lista3)
 
 # 4- Escriba un programa que permita crear una lista de palabras y que, a continuación, pida una palabra y elimine esa palabra de la lista.
 lista4 = ["Cleo", "Aquiles", "gatitos", "escritorio", "celular", "gatitos"]
 pal1 = input("Ingrese la palabra para eliminar: ")
 
-indice = lista4.index(pal1)
-if indice > 0:
+if pal1 in lista4:
     print("La palabra", pal1, "se elimino de la lista")
-    lista4.pop(indice)
-else: 
+    lista4.remove(pal1)
+else:
     print("La palabra", pal1, "no se encuentra en la lista")
+
 print(lista4)
 
 
