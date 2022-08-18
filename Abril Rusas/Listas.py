@@ -10,25 +10,23 @@ print(lista)
 
 # 2 - Escriba un programa que permita crear una lista de palabras y que, a continuación, pida una palabra y diga cuántas veces aparece esa palabra en la lista.
 lista2=["violeta","lila","esmeralda","rosa"]
-p=input("Ingrese una palabra: ").lower()
-n=lista2.count(p)
-
 print(lista2)
+p=input("Ingrese una palabra de la lista: ").lower()
+n=lista2.count(p)
 print("La palabra ", p, " aparece ", n, " veces.")
 
 # 3- Escriba un programa que permita crear una lista de palabras y que, a continuación, pida dos palabras y sustituya la primera por la segunda en la lista.
-primerPalabra=input("Ingrese una palabra existente: ")
-segundaPalabra=input("Ingrese una palabra sustituyente: ")
-indice=lista2.index(primerPalabra)
-lista.remove(primerPalabra)
-lista2.insert(indice,segundaPalabra)
+palabra1=input("Ingrese una palabra de la lista: ")
+palabra2=input("Ingrese una palabra sustituyente: ")
+indice=lista2.index(palabra1)
+lista2.insert(indice,palabra2)
+lista2.remove(palabra1)
 print(lista2)
 
 # 4- Escriba un programa que permita crear una lista de palabras y que, a continuación, pida una palabra y elimine esa palabra de la lista.
-palabra=input("Ingrese una palabra: ")
-if palabra in lista:
-    lista.remove(palabra)
-print(lista)
+palabra=input("Ingrese una palabra de la lista: ")
+lista2.remove(palabra)
+print(lista2)
 
 # 5- Escriba un programa que permita crear dos listas de palabras y que, a continuación, elimine de la primera lista los nombres de la segunda lista.
 for i in lista:
