@@ -4,7 +4,7 @@ Una lista es una estructura de datos en la que puedes añadir elementos para su 
 Declarar lista
 
 my_lista = []
-My_Lista = list()
+My_Lista = list() 
 
 ## Unir listas
 
