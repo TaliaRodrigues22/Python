@@ -157,9 +157,9 @@ while opcion != '5':
     elif(opcion == '2'):
         txtBusqueda = input("Buscar contacto: ").capitalize()
         existe = False
-        for i in agenda:
-            if(i.startswith(txtBusqueda)):
-                print(f"{i}: {agenda[i]}")
+        for nombre in agenda:
+            if(nombre.startswith(txtBusqueda)):
+                print(f"{nombre}: {agenda[i]}")
                 existe = True
         if(not existe):
             print("¡Sin coincidencias!")
@@ -176,5 +176,5 @@ while opcion != '5':
             
     elif(opcion == '4'):
         print("\n- Lista de contactos -")
-        for i in agenda:
-            print(f'{i}: {agenda[i]}')
+        for nombre in agenda:
+            print(f'{nombre}: {agenda[i]}')
