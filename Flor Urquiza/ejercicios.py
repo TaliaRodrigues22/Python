@@ -46,6 +46,39 @@ lista.remove(palabraEliminada)
 print (lista)
 
 
+#5- Escriba un programa que permita crear dos listas de palabras y que, a continuación, 
+# elimine de la primera lista los nombres de la segunda lista.
+
+
+lista1=int(input("Cuantas palabras quiere escribir para la lista: "))
+lista=[]
+for i in range(1,lista1+1):
+    palabra=input("palabra: ")
+    lista.append(palabra)
+print(lista)
+X=0
+eliminados=[]
+while X <2:
+    X+=1
+    canteliminar = input("Elimine dos palabras: ")
+    palabra2 = lista.remove(canteliminar)
+    eliminados.append(canteliminar)
+    print("eliminados:",eliminados)
+    print("la lista quedo asi: ",lista)
+    
+    
+#6- Escriba un programa que permita crear una lista de palabras y que, 
+# a continuación, cree una segunda lista igual a la primera, pero al revés 
+# (no se trata de escribir la lista al revés, sino de crear una lista distinta)
+
+lista= ["perro", "gato", "mono", "jirafa"]
+lista2= lista*2
+lista2.reverse()
+print (lista2)
+    
+
+
+
      
      
      
