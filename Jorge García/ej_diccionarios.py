@@ -159,7 +159,7 @@ while opcion != '5':
         existe = False
         for nombre in agenda:
             if(nombre.startswith(txtBusqueda)):
-                print(f"{nombre}: {agenda[i]}")
+                print(f"{nombre}: {agenda[nombre]}")
                 existe = True
         if(not existe):
             print("¡Sin coincidencias!")
@@ -177,4 +177,4 @@ while opcion != '5':
     elif(opcion == '4'):
         print("\n- Lista de contactos -")
         for nombre in agenda:
-            print(f'{nombre}: {agenda[i]}')
+            print(f'{nombre}: {agenda[nombre]}')
