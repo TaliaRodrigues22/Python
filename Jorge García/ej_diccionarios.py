@@ -1,115 +1,115 @@
-# 1 - Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono y lo guarde en un diccionario. 
-# Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, vive en <dirección> y su número de teléfono es <teléfono>.
+# # 1 - Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono y lo guarde en un diccionario. 
+# # Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, vive en <dirección> y su número de teléfono es <teléfono>.
 
-persona = {
-    'nombre': '',
-    'edad': '',
-    'direccion': '',
-    'teléfono': ''
-}
+# persona = {
+#     'nombre': '',
+#     'edad': '',
+#     'direccion': '',
+#     'teléfono': ''
+# }
 
-for clave in persona.keys():
-    dato = input(f"Ingresa tu {clave}: ")
-    persona[clave] = dato
+# for clave in persona.keys():
+#     dato = input(f"Ingresa tu {clave}: ")
+#     persona[clave] = dato
     
-print(f'{persona["nombre"]} tiene {persona["edad"]} años, vive en {persona["direccion"]} y su número de teléfono es {persona["teléfono"]}')
+# print(f'{persona["nombre"]} tiene {persona["edad"]} años, vive en {persona["direccion"]} y su número de teléfono es {persona["teléfono"]}')
 
-# 2-Escribir un programa que guarde en un diccionario los precios de las frutas de la tabla, 
-# pregunte al usuario por una fruta, un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. 
-# Si la fruta no está en el diccionario debe mostrar un mensaje informando de ello.
+# # 2-Escribir un programa que guarde en un diccionario los precios de las frutas de la tabla, 
+# # pregunte al usuario por una fruta, un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. 
+# # Si la fruta no está en el diccionario debe mostrar un mensaje informando de ello.
 
-# Fruta	Precio
-# Plátano	1.35
-# Manzana	0.80
-# Pera	0.85
-# Naranja	0.70
+# # Fruta	Precio
+# # Plátano	1.35
+# # Manzana	0.80
+# # Pera	0.85
+# # Naranja	0.70
 
-precios_frutas = {
-    'Plátano': 1.35,
-    'Manzana': 0.80,
-    'Pera': 0.85,
-    'Naranja': 0.70
-}
+# precios_frutas = {
+#     'Plátano': 1.35,
+#     'Manzana': 0.80,
+#     'Pera': 0.85,
+#     'Naranja': 0.70
+# }
 
-frutaUsr = input("Ingresa la fruta: ").capitalize()
-kilosUsr = float(input("Ingresa los kilos que quieres comprar: "))
+# frutaUsr = input("Ingresa la fruta: ").capitalize()
+# kilosUsr = float(input("Ingresa los kilos que quieres comprar: "))
 
-precioPorKilo = precios_frutas.get(frutaUsr)
-if(precioPorKilo != None):
-    precioTotal = precioPorKilo * kilosUsr
-    print(f"El precio total es de: {precioTotal}$")
-else:
-    print("La fruta ingresada no la vendemos.")
+# precioPorKilo = precios_frutas.get(frutaUsr)
+# if(precioPorKilo != None):
+#     precioTotal = precioPorKilo * kilosUsr
+#     print(f"El precio total es de: {precioTotal}$")
+# else:
+#     print("La fruta ingresada no la vendemos.")
 
-# 3-Escribir un programa que pregunte una fecha en formato dd/mm/aaaa y 
-# muestre por pantalla la misma fecha en formato dd de <mes> de aaaa donde <mes> es el nombre del mes.
+# # 3-Escribir un programa que pregunte una fecha en formato dd/mm/aaaa y 
+# # muestre por pantalla la misma fecha en formato dd de <mes> de aaaa donde <mes> es el nombre del mes.
 
-meses = {1:'Enero', 2:'Febrero', 3:'Marzo', 4:'Abril', 5:'Mayo', 6:'Junio',
-    7:'Julio', 8:'Agosto', 9:'Septiembre', 10:'Octubre', 11:'Noviembre', 12:'Diciembre'}
+# meses = {1:'Enero', 2:'Febrero', 3:'Marzo', 4:'Abril', 5:'Mayo', 6:'Junio',
+#     7:'Julio', 8:'Agosto', 9:'Septiembre', 10:'Octubre', 11:'Noviembre', 12:'Diciembre'}
 
-fechaUsr = input("Fecha [dd/mm/aaaa]: ")
-fechaSeparada = fechaUsr.split('/')
+# fechaUsr = input("Fecha [dd/mm/aaaa]: ")
+# fechaSeparada = fechaUsr.split('/')
 
-if(len(fechaSeparada) == 3 and int(fechaSeparada[0]) > 0 and int(fechaSeparada[0]) <= 31):
-    mes = int(fechaSeparada[1])
-    if(meses.get(mes) != None):
-        print(f'{fechaSeparada[0]} de {meses[mes]} de {fechaSeparada[2]}') 
-    else:
-        print("¡Mes inválido!") 
-else:
-    print("Fecha inválida")
+# if(len(fechaSeparada) == 3 and int(fechaSeparada[0]) > 0 and int(fechaSeparada[0]) <= 31):
+#     mes = int(fechaSeparada[1])
+#     if(meses.get(mes) != None):
+#         print(f'{fechaSeparada[0]} de {meses[mes]} de {fechaSeparada[2]}') 
+#     else:
+#         print("¡Mes inválido!") 
+# else:
+#     print("Fecha inválida")
 
-# 4-Escribir un programa que cree un diccionario vacío y lo vaya llenado 
-# con información sobre una persona (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. 
-# Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
+# # 4-Escribir un programa que cree un diccionario vacío y lo vaya llenado 
+# # con información sobre una persona (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. 
+# # Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
 
-respuesta = 2
-persona = {}
-while respuesta != 1:
-    dato = input("Ingresa el dato que quieres agregar: ")
-    valor = input(f"Ingresa tu {dato}: ")
-    persona[dato] = valor
-    print(persona)
-    respuesta = int(input("Si quieres salir ingresa [1], si no ingresa [2]: "))
+# respuesta = 2
+# persona = {}
+# while respuesta != 1:
+#     dato = input("Ingresa el dato que quieres agregar: ")
+#     valor = input(f"Ingresa tu {dato}: ")
+#     persona[dato] = valor
+#     print(persona)
+#     respuesta = int(input("Si quieres salir ingresa [1], si no ingresa [2]: "))
 
-# 5-Escribir un programa que gestione las facturas pendientes de cobro de una empresa. 
-# Las facturas se almacenarán en un diccionario donde la clave de cada factura será el número de factura y el valor el coste de la factura. 
-# El programa debe preguntar al usuario si quiere añadir una nueva factura, pagar una existente o terminar. 
-# Si desea añadir una nueva factura se preguntará por el número de factura y su coste y se añadirá al diccionario. 
-# Si se desea pagar una factura se preguntará por el número de factura y se eliminará del diccionario. 
-# Después de cada operación el programa debe mostrar por pantalla la cantidad cobrada hasta el momento y la cantidad pendiente de cobro.
+# # 5-Escribir un programa que gestione las facturas pendientes de cobro de una empresa. 
+# # Las facturas se almacenarán en un diccionario donde la clave de cada factura será el número de factura y el valor el coste de la factura. 
+# # El programa debe preguntar al usuario si quiere añadir una nueva factura, pagar una existente o terminar. 
+# # Si desea añadir una nueva factura se preguntará por el número de factura y su coste y se añadirá al diccionario. 
+# # Si se desea pagar una factura se preguntará por el número de factura y se eliminará del diccionario. 
+# # Después de cada operación el programa debe mostrar por pantalla la cantidad cobrada hasta el momento y la cantidad pendiente de cobro.
 
-facturas = {
-    1: 1000,
-    2: 4500,
-    3: 5500,
-    4: 2400
-}
+# facturas = {
+#     1: 1000,
+#     2: 4500,
+#     3: 5500,
+#     4: 2400
+# }
 
-opcion = 0
-acumuladorCobro = 0
-while opcion != '3':
-    opcion = input("\n--- Opciones ---\n[1] Agregar factura \n[2] Pagar factura existente \n[3] Salir \n\nOpción: ")
-    if(opcion == '1'):
-        numeroFactura = int(input("Ingresa el número de la nueva factura: "))
-        if(numeroFactura in facturas):
-            print("\n¡Ya existe la factura!\n")
-        else:
-            costeFactura = float(input("Ingresa el coste de la factura: "))
-            facturas[numeroFactura] = costeFactura
-            print('\n¡Factura agregada exitosamente!\n')
-    elif(opcion == '2'):
-        print(f'Facturas -> {facturas}')
-        numeroFactura = int(input("Ingresa el número de la factura a pagar: "))
-        if(numeroFactura in facturas):
-            facturaEliminada = facturas.pop(numeroFactura)
-            acumuladorCobro += facturaEliminada
-            print(f"\nSe pago la factura de: {facturaEliminada}$\n")
-        else:
-            print('\n¡Factura inexistente!\n')
-    pendienteCobro = sum(facturas.values())
-    print(f'Cantidad pendiente de cobro: {pendienteCobro}$')
-    print(f'Cobrado hasta el momento: {acumuladorCobro}$\n')
+# opcion = 0
+# acumuladorCobro = 0
+# while opcion != '3':
+#     opcion = input("\n--- Opciones ---\n[1] Agregar factura \n[2] Pagar factura existente \n[3] Salir \n\nOpción: ")
+#     if(opcion == '1'):
+#         numeroFactura = int(input("Ingresa el número de la nueva factura: "))
+#         if(numeroFactura in facturas):
+#             print("\n¡Ya existe la factura!\n")
+#         else:
+#             costeFactura = float(input("Ingresa el coste de la factura: "))
+#             facturas[numeroFactura] = costeFactura
+#             print('\n¡Factura agregada exitosamente!\n')
+#     elif(opcion == '2'):
+#         print(f'Facturas -> {facturas}')
+#         numeroFactura = int(input("Ingresa el número de la factura a pagar: "))
+#         if(numeroFactura in facturas):
+#             facturaEliminada = facturas.pop(numeroFactura)
+#             acumuladorCobro += facturaEliminada
+#             print(f"\nSe pago la factura de: {facturaEliminada}$\n")
+#         else:
+#             print('\n¡Factura inexistente!\n')
+#     pendienteCobro = sum(facturas.values())
+#     print(f'Cantidad pendiente de cobro: {pendienteCobro}$')
+#     print(f'Cobrado hasta el momento: {acumuladorCobro}$\n')
 
 # 6-Escribir un programa que implemente una agenda. En la agenda se podrán guardar nombres y números de teléfono. 
 # El programa nos dará el siguiente menú:
@@ -130,7 +130,6 @@ agenda = {
 }
 
 opcion = 0
-acumuladorCobro = 0
 while opcion != '5':
     opcion = input("\n      --- Opciones ---"
                     "\n[1] Añadir/Modificar contacto"
