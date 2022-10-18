@@ -73,5 +73,6 @@ print("Palabra eliminada", eliminados)
 lista= ["mouse", "teclado", "parlantes", "auriculares"]
 
 listaCopy=lista.copy()
+print(listaCopy)
 lista.reverse()
 print(lista)
